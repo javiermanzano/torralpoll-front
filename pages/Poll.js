@@ -7,9 +7,13 @@ import axios from 'axios';
 class Question extends Component {
     componentDidMount() {
         const { url: { query: { id } } } = this.props;
-        axios.get(`http://426028e0.ngrok.io/${id}/details`).then(response => {
-            console.log({ response });
-        })
+        console.log('componentDidMount');
+        axios
+            .get(`https://torralbot-api.herokuapp.com/${id}/details`)
+            .then(response => {
+                console.log({ response });
+            })
+            .catch(err => console.log('error', err));
     }
     render() {
         const { url: { query: { id } } } = this.props;
