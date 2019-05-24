@@ -5,31 +5,38 @@ import Button from '../componentes/button';
 import axios from 'axios';
 
 class Question extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            poll: { options: [] },
+        };
+    }
     componentDidMount() {
         const { url: { query: { id } } } = this.props;
         console.log('componentDidMount');
         axios
             .get(`https://torralbot-api.herokuapp.com/${id}/details`)
             .then(response => {
-                console.log({ response });
+                const poll = response.data;
+                this.setState({ poll })
             })
             .catch(err => console.log('error', err));
     }
     render() {
         const { url: { query: { id } } } = this.props;
         console.log('this.props', id);
-        const options= ['option1', 'option2', 'option3'];
+        const options= this.state.poll.options;
         return (
             <Layout title="question" classnames="question-page">
             <div className="page-inner">
            
                 <div className="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eleifend ligula commodo leo cursus laoreet. Quisque hendrerit consectetur tortor, in auctor libero tincidunt id. Donec malesuada fringilla leo, eget auctor eros varius ut. Phasellus maximus, odio quis volutpat pharetra, libero tortor porttitor justo, nec commodo justo nisl quis nisi. Praesent aliquet nulla quis dolor porta ullamcorper. Nullam imperdiet vitae lacus at accumsan. Vivamus eget est sed urna ultrices sagittis. Nunc tellus sapien, dapibus sit amet dui et, viverra suscipit nisl. Pellentesque quis vehicula nunc. Sed est ante, sagittis quis lorem vitae, condimentum efficitur neque. Integer vitae augue nec sapien posuere suscipit. Sed sit amet elementum arcu.
+                    {this.state.poll.name}
                 </div>
                  <div className="left">
                 <ul className="lists">
                     {options.map((option,i)=>
-                        <Checkbox option={option} key={i}/>
+                        <Checkbox option={option.name} key={i}/>
                     )}
                 </ul>
                 </div>

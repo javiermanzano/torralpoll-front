@@ -6,7 +6,7 @@ const Layout = ({title,children, classnames, author='author'}) =>(
         <Nav/>
         <div className="title">
             <h1>{title}</h1>
-            <span className="author">@{author}</span>
+            <span className="author">@Guidesmiths</span>
         </div>
         {children}
         <style jsx global>{`
