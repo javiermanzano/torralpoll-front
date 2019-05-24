@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="49px" viewBox="0 0 56 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>gs_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Polling-history" transform="translate(-20.000000, -17.000000)">
+            <g id="navbar">
+                <g id="gs_icon" transform="translate(22.000000, 19.000000)">
+                    <polygon id="Polygon" stroke="#17AD8D" stroke-width="3" points="39 0 52 22.5 39 45 13 45 0 22.5 13 0"></polygon>
+                    <circle id="Oval" fill="#17AD8D" cx="26" cy="23" r="4"></circle>
+                    <g id="arrow" transform="translate(25.909903, 22.909903) rotate(-45.000000) translate(-25.909903, -22.909903) translate(7.409903, 18.909903)">
+                        <path d="M0.701010127,4.00609665 L30.3218513,3.75" id="Line" stroke="#17AD8D" stroke-linecap="square"></path>
+                        <polygon id="Triangle" fill="#17AD8D" transform="translate(33.303990, 3.734325) rotate(-270.000000) translate(-33.303990, -3.734325) " points="33.3039897 0.976748951 36.6592529 6.49190047 29.9487266 6.49190047"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

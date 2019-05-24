@@ -3,9 +3,9 @@ import React from 'react';
 const Icons = (props) =>{
 	switch (props.name){
 	case 'polygon':
-		return <Polygon className={props.className} />;
-	case 'panelSetting':
-		return <PanelSetting className={props.className} />;
+		return <Polygon className={props.className} style={props.style} />;
+	case 'logo':
+		return <Logo className={props.className} style={props.style}/>;
 	case 'panelUser':
 		return <PanelUser className={props.className} />;
 	case 'panelGraphic':
@@ -47,7 +47,7 @@ const Polygon = ({
 		className={className}
 	> 
     <title>Polygon</title>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
         <g id="polling" transform="translate(-106.000000, -522.000000)" fill="#17AD8D" stroke="#17AD8D">
             <g id="option-" transform="translate(107.000000, 521.000000)">
                 <polygon id="Polygon" transform="translate(14.000000, 14.000000) rotate(-270.000000) translate(-14.000000, -14.000000) " points="14 0 26.1243557 7 26.1243557 21 14 28 1.87564435 21 1.87564435 7"></polygon>
@@ -68,11 +68,11 @@ const Polygon = ({
 	</svg>
 );
 
-const PanelSetting = ({
+const Logo = ({
 	style = {},
-	width = '30',
-	height = '25',
-	viewBox = '0 0 30 25',
+	width = '56',
+	height = '49',
+	viewBox = '0 0 56 49',
 	className = '',
 }) => (
 	<svg 
@@ -82,44 +82,22 @@ const PanelSetting = ({
 		viewBox={viewBox}
 		className={className}
 	>
-		<defs>
-			<polygon id="path-1" points="0 0 24 0 24 8.30769231 12 8.30769231 12 24 0 24" />
-		</defs>
-		<g id="Page-1"  strokeWidth="1" fill="none" fillRule="evenodd">
-			<g id="panelSettings" transform="translate(-0.000000, -3.000000)">
-				<g id="Group">
-					<g id="Clipped">
-						<mask id="mask-2" fill="white">
-							<use xlinkHref="#path-1" />
-						</mask>
-						<g id="a" />
-						<rect id="Rectangle"  mask="url(#mask-2)" x="3.5" y="3.5" width="19" height="19" rx="2" />
-					</g>
-				</g>
-				<path d="M27.113,19.784 L28.848,21.104 C29.004,21.224 29.045,21.44 28.947,21.616 L27.302,24.384 C27.2017559,24.5593867 26.9878164,24.6343933 26.8,24.56 L24.752,23.76 C24.3233982,24.0786217 23.8563941,24.3420255 23.362,24.544 L23.05,26.664 C23.0189589,26.8612281 22.8465948,27.004936 22.647,27 L19.357,27 C19.1574052,27.004936 18.9850411,26.8612281 18.954,26.664 L18.641,24.544 C18.1450913,24.3451685 17.6776955,24.0815438 17.251,23.76 L15.204,24.56 C15.0161077,24.6287004 14.8058583,24.5549874 14.702,24.384 L13.057,21.616 C12.9571085,21.4446259 12.9994237,21.2257837 13.156,21.104 L14.891,19.784 C14.8550315,19.5241641 14.8356589,19.2623001 14.833,19 C14.833,18.736 14.858,18.472 14.891,18.216 L13.156,16.896 C12.9957058,16.7765242 12.9527982,16.5546186 13.057,16.384 L14.702,13.616 C14.801,13.44 15.014,13.368 15.204,13.44 L17.251,14.24 C17.6796018,13.9213783 18.1466059,13.6579745 18.641,13.456 L18.954,11.336 C18.9850411,11.1387719 19.1574052,10.995064 19.357,11 L22.647,11 C22.852,11 23.025,11.144 23.05,11.336 L23.362,13.456 C23.864,13.656 24.324,13.92 24.752,14.24 L26.8,13.44 C26.981,13.376 27.203,13.44 27.302,13.616 L28.947,16.384 C29.0466721,16.5556133 29.0039203,16.7745024 28.847,16.896 L27.113,18.216 C27.145,18.472 27.17,18.728 27.17,19 C27.17,19.272 27.145,19.528 27.113,19.784 Z M21.002,21.8 C22.589,21.8 23.88,20.544 23.88,19 C23.88,17.456 22.59,16.2 21.002,16.2 C19.415,16.2 18.123,17.456 18.123,19 C18.123,20.544 19.415,21.8 21.002,21.8 Z" id="gear" />
-			</g>
-		</g>
-		<style jsx>
-			{`
-			svg{
-				${Styles}
-			}
-			svg:hover{
-				stroke:#3BBA90;
-				transform:scale(1.1);
-			}
-			svg:hover #gear{
-				animation:rotate 3s infinite ;
-				animation-fill-mode: forwards;
-				stroke:#3BBA90;
-				transform-origin: 70% 75%;
-			}
-			@keyframes rotate{
-				from{transform:rotate(0deg);}
-				to{transform:rotate(360deg);}
-			}
-			`}
-		</style>
+    <title>gs_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Polling-history" transform="translate(-20.000000, -17.000000)">
+            <g id="navbar">
+                <g id="gs_icon" transform="translate(22.000000, 19.000000)">
+                    <polygon id="Polygon" stroke="#17AD8D" stroke-width="3" points="39 0 52 22.5 39 45 13 45 0 22.5 13 0"></polygon>
+                    <circle id="Oval" fill="#17AD8D" cx="26" cy="23" r="4"></circle>
+                    <g id="arrow" transform="translate(25.909903, 22.909903) rotate(-45.000000) translate(-25.909903, -22.909903) translate(7.409903, 18.909903)">
+                        <path d="M0.701010127,4.00609665 L30.3218513,3.75" id="Line" stroke="#17AD8D" stroke-linecap="square"></path>
+                        <polygon id="Triangle" fill="#17AD8D" transform="translate(33.303990, 3.734325) rotate(-270.000000) translate(-33.303990, -3.734325) " points="33.3039897 0.976748951 36.6592529 6.49190047 29.9487266 6.49190047"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 	</svg>
 );
 

@@ -3,13 +3,20 @@ import Icons from './icons';
 
 const Navbar = ({title,children, classnames}) =>(
     <nav>
-        <Icons name='polygon' />
+        <Icons name='logo' style={{width:'35px'}}/>
         <style jsx>{`
         nav{
           background:var(--dark-color);
-          margin-left: -30px;
-          margin-right: -30px;
           height:48px;
+          padding:5px;
+          display:flex;
+          align-items:center;
+          margin-bottom:50px;
+          position:absolute;
+          width:100%;
+          left:0;
+          top:0;
+          box-sizing:border-box;
         }
       `}
       </style>
