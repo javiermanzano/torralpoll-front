@@ -7,6 +7,7 @@ import axios from 'axios';
 
 
 const Question = ({options=[]}) => {
+    
 options= ['option1', 'option2', 'option3'];
     return (
         <Layout title="question" classnames="question-page">
